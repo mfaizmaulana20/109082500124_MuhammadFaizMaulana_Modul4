@@ -49,7 +49,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul3/blob/main/109082500124_MUHAMMADFAIZMAULANA-main/modul3/output/Out%20Put%20-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal1.png)
 [penjelasan] :Program ini menghitung permutasi dari dua pasangan bilangan input (a, c) dan (b, d). Fungsi factorial digunakan untuk menghitung faktorial suatu bilangan dengan menyimpan hasilnya melalui pointer (*int). Fungsi permutation menghitung ( P(n,r) = n!/(n-r)! ), sedangkan combination menghitung ( C(n,r) = n!/(r!(n-r)!) ), keduanya juga menggunakan hasil dari factorial. Di main, program membaca empat angka, lalu menghitung permutasi dan kombinasi untuk masing-masing pasangan dan mencetak hasilnya dalam dua baris, masing-masing berisi nilai permutasi dan kombinasi.
 
 
@@ -108,7 +108,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul3/blob/main/109082500124_MUHAMMADFAIZMAULANA-main/modul3/output/Out%20Put-Soal%202.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal%2002.png)
 [penjelasan] : program ini digunakan untuk menentukan pemenang kompetisi berdasarkan jumlah soal yang berhasil diselesaikan dan total waktu tercepat. Prosedur hitungSkor membaca waktu pengerjaan 8 soal untuk setiap peserta, lalu menghitung berapa soal yang selesai (waktu ≤ 300 menit) dan menjumlahkan total waktunya menggunakan pointer agar hasil langsung tersimpan ke variabel luar. Di main, program membaca nama peserta berulang hingga “Selesai”, kemudian memanggil prosedur tersebut untuk setiap peserta dan membandingkan hasilnya: peserta dengan jumlah soal terbanyak menjadi pemenang, dan jika sama, dipilih yang memiliki total waktu lebih kecil. Akhirnya, nama pemenang, jumlah soal, dan total waktu ditampilkan.
 ## Unguided 
 
@@ -143,7 +143,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul3/blob/main/109082500124_MUHAMMADFAIZMAULANA-main/modul3/output/Out%20Put-Soal%203.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal3.png)
 [penjelasan] :Program ini mencetak deret Collatz dari sebuah bilangan input n hingga mencapai 1. Prosedur collatz akan melakukan perulangan selama n belum sama dengan 1, setiap langkah mencetak nilai n, lalu jika n genap dibagi 2, sedangkan jika ganjil dihitung dengan rumus 3n + 1. Proses ini terus berulang sampai akhirnya mencapai 1, lalu angka 1 dicetak sebagai akhir deret.
 
 
