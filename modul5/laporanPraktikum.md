@@ -44,7 +44,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_MODUL5/blob/main/MODUL5/109082500124_MUHAMMADFAIZMAULANA-main/modul5/output/out-put%20soal1.png)
 [penjelasan] :Program ini menghitung dan menampilkan deret Fibonacci dari indeks 0 sampai nilai n yang dimasukkan pengguna. Fungsi fibonacci(n) dibuat secara rekursif, dengan kondisi dasar n=0 mengembalikan 0 dan n=1 mengembalikan 1, sedangkan untuk nilai lainnya dihitung dari penjumlahan dua suku sebelumnya, yaitu fibonacci(n-1) + fibonacci(n-2). Di fungsi main, program meminta input n, lalu mencetak dua baris output: baris pertama berisi indeks n (0 hingga n), dan baris kedua berisi nilai setiap suku Fibonacci (Sn) yang sesuai dengan masing-masing indeks tersebut.
 
 
@@ -84,7 +84,7 @@ func baris(i, a int) {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal%2002.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_MODUL5/blob/main/MODUL5/109082500124_MUHAMMADFAIZMAULANA-main/modul5/output/out-put%20soal2.png)
 [penjelasan] : Program ini membaca sebuah bilangan n lalu mencetak pola segitiga bintang secara rekursif, dimulai dari baris kosong hingga baris dengan jumlah bintang terbanyak. Fungsi bintang(n, i) mengatur perpindahan antarbaris dengan menaikkan nilai i dari 0 sampai n, sedangkan fungsi baris(i, a) mencetak karakter * sebanyak i kali pada tiap baris juga dengan rekursi. Saat i belum sama dengan n, program mencetak baris lalu lanjut ke baris berikutnya; ketika mencapai kondisi akhir, program mencetak baris terakhir dan berhenti, sehingga terbentuk pola bintang bertingkat tanpa menggunakan perulangan biasa untuk proses utamanya.
 ## Unguided 
 
@@ -117,7 +117,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal3.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_MODUL5/blob/main/MODUL5/109082500124_MUHAMMADFAIZMAULANA-main/modul5/output/out-put%20soal3.png)
 [penjelasan] :berfungsi untuk menampilkan semua faktor dari sebuah bilangan bulat n yang dimasukkan pengguna. Setelah input dibaca di fungsi main, program memanggil fungsi rekursif cariFaktor(n, 1) yang memeriksa setiap angka i mulai dari 1 hingga n; jika n habis dibagi i (n%i == 0), maka i dicetak sebagai faktor. Proses ini berulang secara rekursif dengan menaikkan i satu per satu sampai melewati n, sehingga seluruh faktor bilangan dapat ditampilkan tanpa menggunakan perulangan biasa.
 
 ## Unguided 
@@ -156,7 +156,7 @@ func naik(n,i int){
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_MODUL5/blob/main/MODUL5/109082500124_MUHAMMADFAIZMAULANA-main/modul5/output/out-put%20soal4.png)
 [penjelasan] :membaca sebuah bilangan n dari input, lalu menampilkan dua pola angka menggunakan rekursi: pertama urutan menurun dari n sampai 2 melalui fungsi turun, kemudian urutan menaik dari 1 sampai n melalui fungsi naik. Fungsi turun(n, i) terus mencetak nilai n dan memanggil dirinya sendiri dengan n-1 selama n tidak sama dengan i (dengan i bernilai awal 1), sedangkan fungsi naik(n, i) mencetak i lalu menaikkan nilainya satu per satu hingga i lebih besar dari n. Hasil akhirnya adalah deretan angka menurun lalu menaik yang dicetak berurutan dalam satu baris.
 
 ## Unguided 
@@ -191,7 +191,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_MODUL5/blob/main/MODUL5/109082500124_MUHAMMADFAIZMAULANA-main/modul5/output/out-put%20soal5.png)
 [penjelasan] :digunakan untuk menampilkan semua bilangan ganjil dari 1 sampai n, dengan n dimasukkan oleh pengguna. Setelah input dibaca di fungsi main, program memanggil fungsi rekursif cetakGanjil(n, 1) yang memeriksa nilai i mulai dari 1 hingga n; jika i bernilai ganjil (i%2 != 0), angka tersebut dicetak ke layar. Kemudian fungsi memanggil dirinya sendiri dengan i+1 sampai batas i > n tercapai, sehingga seluruh bilangan ganjil dalam rentang tersebut ditampilkan tanpa menggunakan perulangan biasa.
 
 ## Unguided 
@@ -223,5 +223,5 @@ func pangkat(x, y, hasil int){
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_Modul4/blob/main/modul4/output/out-put%20soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/mfaizmaulana20/109082500124_MuhammadFaizMaulana_MODUL5/blob/main/MODUL5/109082500124_MUHAMMADFAIZMAULANA-main/modul5/output/out-put%20soal6.png)
 [penjelasan] :Program ini menghitung hasil perpangkatan secara rekursif, yaitu nilai x pangkat y dari dua input bilangan bulat yang dimasukkan pengguna. Di fungsi main, program membaca x dan y lalu memanggil fungsi pangkat dengan nilai awal hasil = 1 sebagai penampung akumulasi perkalian. Pada fungsi pangkat, selama y masih lebih dari 0, nilai hasil terus dikalikan dengan x dan fungsi memanggil dirinya sendiri dengan y-1; ketika y sudah 0, proses berhenti dan nilai hasil dicetak sebagai output akhir. Dengan alur ini, operasi perpangkatan dilakukan melalui perkalian berulang menggunakan rekursi.
