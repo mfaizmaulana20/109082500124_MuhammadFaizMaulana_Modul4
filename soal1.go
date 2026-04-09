@@ -1,38 +1,33 @@
+
 package main
 
 import "fmt"
 
-func factorial(n int, hasil *int) {
-	*hasil = 1
-	for i := 2; i <= n; i++ {
-		*hasil *= i
+func fibonacci(n int) int {
+	if n == 0 {
+		return 0
 	}
-}
-func permutation(n, r int, hasil *int) {
-	var fn, fnr int
-	factorial(n, &fn)
-	factorial(n-r, &fnr)
-	*hasil = fn / fnr
-}
-func combination(n, r int, hasil *int) {
-	var fn, fr, fnr int
-	factorial(n, &fn)
-	factorial(r, &fr)
-	factorial(n-r, &fnr)
-	*hasil = fn / (fr * fnr)
+	if n == 1 {
+		return 1
+	}
+	return fibonacci(n-1) + fibonacci(n-2)
 }
 
 func main() {
-	var a, b, c, d int
-	fmt.Scan(&a, &b, &c, &d)
+	var n int
+	fmt.Print("Masukkan nilai n: ")
+	fmt.Scan(&n)
 
-	var p1, c1, p2, c2 int
-	permutation(a, c, &p1)
-	combination(a, c, &c1)
-
-	permutation(b, d, &p2)
-	combination(b, d, &c2)
-
-	fmt.Println(p1, c1)
-	fmt.Println(p2, c2)
+	fmt.Print("n  ")
+	for i := 0; i <= n; i++ {
+		fmt.Printf("%d  ", i)
+	}
+	fmt.Println() 
+                                     
+	fmt.Print("Sn ")
+	for i := 0; i <= n; i++ {
+		
+		fmt.Printf("%d  ", fibonacci(i))
+	}
+	fmt.Println()
 }

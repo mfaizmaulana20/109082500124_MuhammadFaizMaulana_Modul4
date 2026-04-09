@@ -1,45 +1,26 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func hitungSkor(soal *int, skor *int) {
-	*soal = 0
-	*skor = 0
+func main() {
+	var n int
+	fmt.Scan(&n)
+	bintang(n, 0)
+}
 
-	var waktu int
-	for i := 0; i < 8; i++ {
-		fmt.Scan(&waktu)
-
-		if waktu <= 300 {
-			*soal += 1
-			*skor += waktu
-		}
+func bintang(n, i int) {
+	if i != n {
+		baris(i,0)
+		fmt.Println("")
+		bintang(n, i+1)
+	}else{
+		baris(i,0)
 	}
 }
 
-func main() {
-	var nama, pemenang string
-	var maxSoal, minWaktu int
-	minWaktu = 999999
-
-	for {
-		fmt.Scan(&nama)
-
-		if nama == "Selesai" {
-			break
-		}
-
-		var soal, skor int
-		hitungSkor(&soal, &skor)
-
-		if soal > maxSoal || (soal == maxSoal && skor < minWaktu) {
-			maxSoal = soal
-			minWaktu = skor
-			pemenang = nama
-		}
+func baris(i, a int) {
+	if a != i {
+		fmt.Print("*")
+		baris(i, a+1)
 	}
-
-	fmt.Println(pemenang, maxSoal, minWaktu)
 }

@@ -1,23 +1,33 @@
+
 package main
 
 import "fmt"
 
-func collatz(n int) {
-	for n != 1 {
-		fmt.Print(n, " ")
-
-		if n%2 == 0 {
-			n = n / 2
-		} else {
-			n = 3*n + 1
-		}
+func fibonacci(n int) int {
+	if n == 0 {
+		return 0
 	}
-	fmt.Println(1)
+	if n == 1 {
+		return 1
+	}
+	return fibonacci(n-1) + fibonacci(n-2)
 }
 
 func main() {
 	var n int
+	fmt.Print("Masukkan nilai n: ")
 	fmt.Scan(&n)
 
-	collatz(n)
+	fmt.Print("n  ")
+	for i := 0; i <= n; i++ {
+		fmt.Printf("%d  ", i)
+	}
+	fmt.Println() 
+                                     
+	fmt.Print("Sn ")
+	for i := 0; i <= n; i++ {
+		
+		fmt.Printf("%d  ", fibonacci(i))
+	}
+	fmt.Println()
 }
